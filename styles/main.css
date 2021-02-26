@@ -57,7 +57,7 @@ nav a:active {
 	display: flex;
 }
 
-.fishList{
+#fishList{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;	

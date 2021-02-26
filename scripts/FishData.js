@@ -1,3 +1,5 @@
+
+
 const fishCollection = [
 	{
 		saltWater: true,
@@ -17,7 +19,13 @@ const fishCollection = [
 		inches: 3,
 		image: "pinkfish.jpg"
 	},
-	{ saltWater: true, harvestLocation: "Atlantic Ocean", diet: "squid", name: "BigBoss", species: "Amber Jack", inches: 60, image: "greyfish.jpg" },
+	{   saltWater: true, 
+        harvestLocation: "Atlantic Ocean", 
+        diet: "squid", 
+        name: "BigBoss", 
+        species: "Amber Jack", 
+        inches: 60, 
+        image: "greyfish.jpg" },
 	{
 		saltWater: true,
 		harvestLocation: "Pacific Ocean",
@@ -90,8 +98,22 @@ const fishCollection = [
 		inches: 39,
 		image: "blueCatfish.jpg"
 	},
-	{ saltWater: true, harvestLocation: "South Pacific", diet: "shrimp", inches: 64, species: "Tuna", name: "Bruno", image: "bluefish.jpg" },
-	{ saltWater: false, harvestLocation: "Petsmart", diet: "algae", name: "Dorothy", species: "goldfish", inches: 3, img: "bluefish.jpg" },
+	{   saltWater: true, 
+        harvestLocation: "South Pacific", 
+        diet: "shrimp", 
+        inches: 64, 
+        species: "Tuna", 
+        name: "Bruno", 
+        image: "bluefish.jpg" 
+    },
+	{ 
+        saltWater: false, 
+        harvestLocation: "Petsmart", 
+        diet: "algae", 
+        name: "Dorothy", 
+        species: "goldfish", 
+        inches: 3, 
+        img: "bluefish.jpg" },
 	{
 		saltWater: false,
 		harvestLocation: "Lake Tahoe",
@@ -182,7 +204,13 @@ const fishCollection = [
 		inches: 999,
 		image: "pinkfish.jpg"
 	},
-	{ saltWater: false, harvestLocation: "Amazon River", diet: "smaller fish", name: "Bitey", species: "Pirhana", inches: 7.5, image: "bluefish.jpg" },
+	{   saltWater: false, 
+        harvestLocation: "Amazon River", 
+        diet: "smaller fish", 
+        name: "Bitey", 
+        species: "Pirhana", 
+        inches: 7.5, 
+        image: "bluefish.jpg" },
 	{
 		saltwater: true,
 		harvestLocation: "St.Croix",
@@ -201,7 +229,13 @@ const fishCollection = [
 		inches: 7,
 		image: "bluefish.jpg"
 	},
-	{ saltWater: true, harvestLocation: "Atlantic, Pacific, and southern sea", diet: "smaller fish", name: "bluefin tuna", species: "Thunnus thynnus", inches: 84, image: bluefin.pg },
+	{   saltWater: true, 
+        harvestLocation: "Atlantic, Pacific, and southern sea", 
+        diet: "smaller fish", 
+        name: "bluefin tuna", 
+        species: "Thunnus thynnus", 
+        inches: 84, 
+        image: "bluefish.jpg" },
 	{
 		saltwater: true,
 		harvestLocation: "Baltic Sea",

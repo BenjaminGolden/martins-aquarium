@@ -1,7 +1,8 @@
-import { getFish } from './FishData.js'
+import { FishList } from './FishList.js';
+FishList();
 
-const allTheFish = getFish()
+// const allTheFish = getFish()
 
-for (const fish of allTheFish) {
-    console.log(fish)
-}
+// for (const fish of allTheFish) {
+//     console.log(fish)
+// }

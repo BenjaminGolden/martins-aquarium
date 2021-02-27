@@ -148,7 +148,7 @@ const fishCollection = [
 		name: "Finn",
 		species: "Bass",
 		inches: 20,
-		image: "bluefish.jpeg",
+		image: "bluefish.jpg",
 	},
 	{
 		saltWater: true,
@@ -246,7 +246,7 @@ const fishCollection = [
 		image: "bluefish.jpg"
 	}
 ];
-
+//storing the fishCollection array in a variable named getFish
 export const getFish = () => {
     return fishCollection
 };

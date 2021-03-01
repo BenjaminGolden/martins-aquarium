@@ -1,23 +1,27 @@
 //imports the getFish function from the Fishdata.js module
-import {getFish} from './FishData.js';
+import {getFish, getMostHolyFish, getSoldierFish, getUnworthy} from './FishData.js';
 //imports the fish function from the Fish.js module
 import {Fish} from './Fish.js';
 
+//  
+
+
 //exporting the FishList function
 export const FishList = () => {
-   //naming a variable allFishes which stores the getFish function     
-    const allFishes = getFish();
+   //naming a variable allFishes which stores the value of running the getFish function     
+    const allFishes = getMostHolyFish().concat(getSoldierFish(), getUnworthy());
+    console.log(typeof allFishes);
     //naming a variable DOMLocation which stores the location to place the collected data 
     const DOMLocation = document.querySelector("#fishList")
-    let fishHTMLRepresentations = "";   //saving the variable fishHTMLRepresentations
+    let listOfAllFishHTML = "";   //declaring the variable fishHTMLRepresentations
     for (const oneThingFromTheSea of allFishes) {
     //for of loop which will pull one thing from the sea of the allFishes function.
     //essentially pulling one set of information from the fishCollection array.
-        fishHTMLRepresentations += Fish(oneThingFromTheSea);
+        listOfAllFishHTML += Fish(oneThingFromTheSea);//oneThingFromTheSea goes in the argument
     
     }
     
-    DOMLocation.innerHTML += `${fishHTMLRepresentations}`
+    DOMLocation.innerHTML += listOfAllFishHTML
 }
 
 
@@ -36,3 +40,8 @@ export const FishList = () => {
 // where as logging it outside of the loop will console.log everything once 
 //5. finally set the dom equal to the variable containing the fish html representations
 //DOMLocation.innerHTML += fishHTMLRepresentation;
+
+// let cube = {
+//     color: "blue",
+//     shape: "square",
+// }

@@ -72,7 +72,7 @@ const fishCollection = [
 		image: "bluefish.jpg"
 	},
 	{
-		saltwater: false,
+		saltWater: false,
 		harvestLocation: "Mississippi River",
 		diet: "Everything",
 		name: "Vacuum",
@@ -113,7 +113,7 @@ const fishCollection = [
         name: "Dorothy", 
         species: "goldfish", 
         inches: 3, 
-        img: "bluefish.jpg" },
+        image: "bluefish.jpg" },
 	{
 		saltWater: false,
 		harvestLocation: "Lake Tahoe",
@@ -156,7 +156,7 @@ const fishCollection = [
 		name: "Simba",
 		species: "lionfish",
 		harvestLocation: "Red Sea",
-		Inches: 10,
+		inches: 10,
 		image: "bluefish.jpg"
 	},
 	{
@@ -212,7 +212,7 @@ const fishCollection = [
         inches: 7.5, 
         image: "bluefish.jpg" },
 	{
-		saltwater: true,
+		saltWater: true,
 		harvestLocation: "St.Croix",
 		diet: "squid",
 		name: "Crush",
@@ -237,7 +237,7 @@ const fishCollection = [
         inches: 84, 
         image: "bluefish.jpg" },
 	{
-		saltwater: true,
+		saltWater: true,
 		harvestLocation: "Baltic Sea",
 		diet: "smaller fish",
 		name: "Fil",
@@ -246,8 +246,41 @@ const fishCollection = [
 		image: "bluefish.jpg"
 	}
 ];
-//storing the fishCollection array in a variable named getFish
+//storing the fishCollection array in a variable named getFish (getFish is holding a function) 
 export const getFish = () => {
     return fishCollection
 };
 
+export const getMostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFishArray = []
+	for (const fishObj of fishCollection) {
+		if(fishObj.inches % 3 === 0){
+			holyFishArray.push(fishObj);
+		}
+    }
+
+    return holyFishArray
+};
+
+export const getSoldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+	const soldierFishArray = []
+	for(const fishObj of fishCollection) {
+		if(fishObj.inches % 5 === 0 && fishObj.inches % 3 !== 0){
+			soldierFishArray.push(fishObj);
+		}
+	}
+    return soldierFishArray
+}
+
+export const getUnworthy = () => {
+    // Any fish not a multiple of 3 or 5
+	const unworthyArray = []
+	for(const fishObj of fishCollection){
+		if(fishObj.inches % 5 !== 0 && fishObj.inches % 3 !== 0){
+			unworthyArray.push(fishObj);
+		}
+	}
+    return unworthyArray
+}

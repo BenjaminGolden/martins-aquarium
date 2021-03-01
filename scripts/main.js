@@ -5,9 +5,3 @@ import { FishList } from './Fish/FishList.js';
 FishList();
 
 
-// const myName = (name) => {
-//     return name
-// };
-//console.log(typeof myName);
-
-//console.log(typeof FishList);

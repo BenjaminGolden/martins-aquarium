@@ -10,7 +10,7 @@ FishList();
 import { TipList } from './tips/TipList.js';
 TipList();
 
-import { TipList } from './tips/TipList.js';
+
+
+import {TipList} from './tips/TipList.js';
 TipList();
-
-

@@ -17,22 +17,7 @@ export const FishList = () => {
     const unworthyFish = getUnworthy();
     addFishToDom(unworthyFish, 'Unworthy Fish:');
 };
-// debugger
-//     const allFishes = holyFish.concat(soldierFish, unworthyFish)
 
-    // console.log(typeof allFishes);
-    // //naming a variable DOMLocation which stores the location to place the collected data 
-    // const DOMLocation = document.querySelector("#fishList")
-    // let listOfAllFishHTML = "";   //declaring the variable fishHTMLRepresentations
-    // for (const oneThingFromTheSea of allFishes) {
-    // //for of loop which will pull one thing from the sea of the allFishes function.
-    // //essentially pulling one set of information from the fishCollection array.
-    //     listOfAllFishHTML += Fish(oneThingFromTheSea);//oneThingFromTheSea goes in the argument
-    
-//     }
-    
-//     DOMLocation.innerHTML += listOfAllFishHTML
-// }
 
 const addFishToDom = (whichFishArray, phrase) => {
     const DOMLocation = document.querySelector("#fishList")

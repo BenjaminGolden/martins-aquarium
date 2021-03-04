@@ -1,4 +1,8 @@
 const locationCollection = [
+    "Carribean",
+    "Pacific Ocean",
+    "atlantic Ocean",
+    
 
 ]
 

@@ -11,11 +11,11 @@ export const FishList = () => {
    //naming a variable allFishes which stores the value of running the getFish function     
    
     const holyFish = getMostHolyFish();
-    addFishToDom(holyFish, "Holy Fish");
+    addFishToDom(holyFish, "Holy Fish:");
     const soldierFish = getSoldierFish();
-    addFishToDom(soldierFish, 'Soldier Fish');
+    addFishToDom(soldierFish, 'Soldier Fish:');
     const unworthyFish = getUnworthy();
-    addFishToDom(unworthyFish, 'Unworthy Fish');
+    addFishToDom(unworthyFish, 'Unworthy Fish:');
 };
 // debugger
 //     const allFishes = holyFish.concat(soldierFish, unworthyFish)
